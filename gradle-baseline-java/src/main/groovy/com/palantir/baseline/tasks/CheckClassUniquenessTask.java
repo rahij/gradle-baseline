@@ -71,8 +71,7 @@ public class CheckClassUniquenessTask extends DefaultTask {
                             + "this may cause different runtime behaviour depending on classpath ordering.\n"
                             + "To resolve this, try excluding one of the following jars:\n\n%s",
                     configuration.getName(),
-                    formatSummary(analyzer)
-            ));
+                    formatSummary(analyzer)));
         }
     }
 

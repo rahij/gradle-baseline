@@ -46,8 +46,7 @@ public final class DangerousJsonTypeInfoUsage extends BugChecker implements BugC
                             treeEqualsStringMatcher("JsonTypeInfo.Id.CLASS"),
                             treeEqualsStringMatcher("JsonTypeInfo.Id.MINIMAL_CLASS"),
                             treeEqualsStringMatcher("com.fasterxml.jackson.annotation.JsonTypeInfo.Id.CLASS"),
-                            treeEqualsStringMatcher("com.fasterxml.jackson.annotation.JsonTypeInfo.Id.MINIMAL_CLASS")
-                    )));
+                            treeEqualsStringMatcher("com.fasterxml.jackson.annotation.JsonTypeInfo.Id.MINIMAL_CLASS"))));
 
     private static Matcher<ExpressionTree> treeEqualsStringMatcher(String value) {
         return (expressionTree, state) -> expressionTree.toString().equals(value);
